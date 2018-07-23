@@ -5,11 +5,11 @@
 
  <target name="deployorg">
 
-        <sf:deploy username="${sf2.username}" 
+        <sf:deploy username="${sf1.username}" 
 
-                     password="${sf2.password}" 
+                     password="${sf1.password}" 
 
-                     serverurl="${sf2.serverurl}" 
+                     serverurl="${sf1.serverurl}" 
 
                      deployRoot="src"
 
@@ -36,11 +36,11 @@
     </target>
   <target name="deploy">
 
-        <sf:deploy username="${sf1.username}" 
+        <sf:deploy username="${sf2.username}" 
 
-                     password="${sf1.password}" 
+                     password="${sf2.password}" 
 
-                     serverurl="${sf1.serverurl}" 
+                     serverurl="${sf2.serverurl}" 
 
                      deployRoot="src"
 
