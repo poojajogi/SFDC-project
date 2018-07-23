@@ -23,11 +23,11 @@
 
     <target name="fetchChanges">
 
-        <sf:retrieve username="${sf1.username}"
+        <sf:retrieve username="${sf2.username}"
 
-                     password="${sf1.password}"
+                     password="${sf2.password}"
 
-                     serverurl="${sf1.serverurl}"
+                     serverurl="${sf2.serverurl}"
 
                      retrieveTarget="src"
 
