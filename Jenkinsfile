@@ -6,12 +6,20 @@ node {
         checkout scm
      }
      
-     stage('Build') 
+    stage('Build') 
      {
         def antVersion = 'AntDefault'
         withEnv( ["ANT_HOME=${tool antVersion}"] )
           {
-            bat '%ANT_HOME%/bin/ant.bat fetchChanges'
+            bat '%ANT_HOME%/bin/ant.bat deploy'
+          }
+     }
+     stage('Deploy') 
+     {
+        def antVersion = 'AntDefault'
+        withEnv( ["ANT_HOME=${tool antVersion}"] )
+          {
+            bat '%ANT_HOME%/bin/ant.bat  fetchChanges  deployorg'
           }
      }
 }
