@@ -11,7 +11,7 @@
 
                      serverurl="${sf1.serverurl}" 
 
-                     deployRoot="src"
+                    
 
             ignoreWarnings="true"
 
