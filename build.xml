@@ -35,12 +35,12 @@
 
                      unpackaged="/src/package.xml"/>
         <echo message="Commiting all changes with message ${gt.commitMessage}" />
-		<git command="add" dir="${Sandbox1.gitDirectory}">
+		<git command="add" dir="${sf1.gitDirectory}">
 			<args>
 				<arg value="." />
 			</args>
 		</git>
-		<git command="commit" dir="${Sandbox1.gitDirectory}">
+		<git command="commit" dir="${sf1.gitDirectory}">
 			<args>
 				<arg value="-am ${gt.commitMessage}" />
 			</args>
