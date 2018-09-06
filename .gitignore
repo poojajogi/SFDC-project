@@ -1,7 +1,28 @@
+
+localCopy 
+
+# GitIgnore for Salesforce Projects
+# Project Settings and MetaData
 .project
-.settings
+.settings/
+# .metadata
+# build.properties
+config
+
+# Apex Log as optional
+apex-scripts/log
+
+# Eclipse specific 
 salesforce.schema
 Referenced Packages
-apex-scripts/log
-config
-localCopy 
+bin/
+tmp/
+config/
+*.tmp
+*.bak 
+local.properties
+.settings
+.loadpath
+.classpath
+*.cache
+
